@@ -21,12 +21,12 @@ public class validCredActiTime {
 		
 		
 		Flib data =new Flib();
-		data.writeExceldata("./data/ActitimeTestData.xlsx", "validcreds",1,0,"admin");
+//		data.writeExceldata("./data/ActitimeTestData.xlsx", "validcreds",1,0,"admin");
 		
 		Thread.sleep(2000);
-		driver.findElement(By.name("username")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "validcreds", 1, 0));
+//		driver.findElement(By.name("username")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "validcreds", 1, 0));
 		Thread.sleep(1000);
-		driver.findElement(By.name("pwd")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "validcreds", 1, 1));
+//		driver.findElement(By.name("pwd")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "validcreds", 1, 1));
 		driver.findElement(By.id("loginButton")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Logout']")).click();

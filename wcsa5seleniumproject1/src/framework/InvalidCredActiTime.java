@@ -25,9 +25,9 @@ public class InvalidCredActiTime {
 		
 		for(int i=0;i<=8;i++)
 		{
-		driver.findElement(By.name("username")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "Invalidcreds", i, 0));
+//		driver.findElement(By.name("username")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "Invalidcreds", i, 0));
 		Thread.sleep(1000);
-		driver.findElement(By.name("pwd")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "Invalidcreds", i, 1));
+//		driver.findElement(By.name("pwd")).sendKeys(data.ReadExcelData("./data/ActitimeTestData.xlsx", "Invalidcreds", i, 1));
 		driver.findElement(By.id("loginButton")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.name("username")).clear();
